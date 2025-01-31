@@ -1,0 +1,11 @@
+{
+    "require": {
+        "setasign/fpdf": "^1.8",
+        "phpmailer/phpmailer": "^6.9"
+    },
+
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0",
+        "phpmd/phpmd" : "@stable"
+    }
+}

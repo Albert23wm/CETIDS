@@ -1,0 +1,47 @@
+.swal-button {
+    background-color: #0E773F !important;
+    color: #FFFFFF !important;
+    /* Puedes agregar más estilos según tus preferencias */
+}
+
+body {
+    -webkit-user-select: none;
+    /* Safari/Chrome */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* General */
+}
+
+.s {
+    pointer-events: none;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    z-index: -1; /* Esto coloca la imagen detrás del card */
+}
+
+.image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+    height: auto;
+}
+/* Estilos por defecto para la imagen en dispositivos no responsivos */
+#imagen {
+    width: 90%; /* Tamaño por defecto para dispositivos no responsivos */
+}
+
+/* Consulta de medios para dispositivos de escritorio */
+@media only screen and (min-width: 769px) {
+    #imagen {
+        width: 50%; /* Tamaño específico para dispositivos de escritorio */
+        /* Otros estilos que desees aplicar en escritorio */
+    }
+}

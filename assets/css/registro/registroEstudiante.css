@@ -1,0 +1,55 @@
+body {
+    background-image: url('img/f.png');
+    /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta correcta de tu imagen */
+    background-size: cover;
+    /* Para asegurarse de que la imagen cubra todo el fondo */
+    background-position: center;
+    /* Para centrar la imagen en el fondo */
+    background-repeat: no-repeat;
+    /* Evitar la repetición de la imagen */
+}
+
+/* Media query para pantallas aún más pequeñas (por ejemplo, teléfonos móviles) */
+@media (max-width: 480px) {
+    .derecha {
+        width: 100%;
+    }
+}
+
+.card {
+    width: 80%;
+    text-align: left;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.swal-button {
+    background-color: #611232 !important; 
+    color: #FFFFFF !important;
+    /* Puedes agregar más estilos según tus preferencias */
+}
+
+@media (max-width: 767px) {
+
+    /* Oculta la imagen en dispositivos con un ancho de pantalla menor a 767px */
+    .hide-on-mobile {
+        display: none !important;
+        /* Agrega !important para asegurarte de que el estilo se aplique */
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,823 @@
+* {
+    cursor: url("cr.png"), auto;
+}
+
+a,
+.btn,
+button {
+    cursor: url("cr_o.png"), auto;
+    text-decoration: none;
+}
+
+
+.btn_favorite {
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.2);
+    text-decoration: none !important;
+    text-transform: uppercase;
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 3px;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.btn_favorite:active {
+    -webkit-transform: translateY(7px);
+    -moz-transform: translateY(7px);
+    -o-transform: translateY(7px);
+    transform: translateY(7px);
+}
+
+.btn_favorite {
+    background: #5e1710;
+    ;
+    box-shadow: 0 10px 0 #350a06,
+        0 11px 5px hsla(0, 0%, 0%, 0.5);
+}
+
+.btn_favorite:active {
+    box-shadow: 0 3px 0 #3a0303,
+        0 4px 6px hsla(0, 0%, 0%, 0.7);
+}
+
+.btn_favorite {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.2);
+    text-decoration: none !important;
+    text-transform: uppercase;
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 3px;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.btn_favorite:active {
+    -webkit-transform: translateY(7px);
+    -moz-transform: translateY(7px);
+    -o-transform: translateY(7px);
+    transform: translateY(7px);
+}
+
+.btn_favorite {
+    background: #5e1710;
+    box-shadow: 0 10px 0 #350a06,
+        0 11px 5px hsla(0, 0%, 0%, 0.5);
+}
+
+.btn_favorite:active {
+    box-shadow: 0 3px 0 #5e1710,
+        0 4px 6px hsla(0, 0%, 0%, 0.7);
+}
+
+.banner {
+    background-color: #0500008e;
+    width: 100%;
+    padding: 2em 0;
+}
+
+.row {
+    align-items: center;
+}
+
+h1 {
+    text-shadow: 1px 1px 2px #7c7c7c;
+}
+
+.btn {
+    padding: 0.5em 2em;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgba(105, 73, 73, 0.15);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to bottom, #3a0303, #691616, #740b0b, #2b0101);
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+nav {
+
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.carousel {
+    position: relative;
+    z-index: 0;
+    /* Establece el z-index del carrusel a 0 */
+}
+
+.redes {
+    position: relative;
+
+    left: 45%;
+}
+
+/* Establece un z-index más alto para la imagen y el menú */
+header,
+nav {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom, #611232, #611232); /* Cambio de color Barra menu -SHOWI */
+    margin-bottom: 0;
+    margin-bottom: 0;
+}
+
+#iso-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/*Estilos del menu*/
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul ul {
+    display: none;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #FFF;
+}
+
+.menu a i {
+    margin-left: 10px;
+}
+
+.menu ul li:hover ul {
+    transition: all 0.3s ease;
+    display: block;
+    position: absolute;
+}
+
+.nav__logo {
+    font-size: 2.5rem;
+    z-index: 1;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+
+    /* Oculta la imagen en dispositivos con un ancho de pantalla menor a 767px */
+    .hide-on-mobile {
+        display: none !important;
+        /* Agrega !important para asegurarte de que el estilo se aplique */
+    }
+
+    header label {
+        display: block;
+        padding-top: 16px;
+        padding-right: 16px;
+        transition: all 0.4s ease;
+    }
+
+    .menu {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 50%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li:hover ul {
+        display: none;
+        position: static;
+    }
+
+    .menu a i {
+        position: absolute;
+        right: 16px;
+        line-height: 32px;
+    }
+
+    #btn-menu:checked~.menu {
+        transform: translateX(0%);
+    }
+
+    .tablink {
+        font-size: 14px;
+        /* Tamaño de la fuente reducido para pantallas más pequeñas */
+        padding: 8px 16px;
+        /* Reducción del espaciado para los botones en pantallas más pequeñas */
+    }
+
+
+}
+
+.galeria {
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    /* Cambiado de 950px a 100% */
+    height: auto;
+}
+
+.galeria img {
+    width: 0;
+    /* Cambiado de 0px a 0 */
+    flex-grow: 1;
+    object-fit: cover;
+    /* filter: brightness(80%); */
+    transition: width 0.7s ease, opacity 0.7s ease, filter 0.7s ease;
+    /* Cambiado para incluir las propiedades de transición */
+}
+
+.galeria img:hover {
+    width: 0%;
+    opacity: 1;
+    filter: brightness(100%);
+}
+
+.tablink-container {
+    display: inline-block;
+    position: relative;
+}
+
+.tablink {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a57f2c;  /* Color botones de dias -SHOWI*/
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+.tablink-container:hover .tablink,
+.tablink-active {
+    background: linear-gradient(to bottom,#611232, #a04e62); color:white; /* Color botones de dias -SHOWI*/
+        color: #fff;
+}
+
+.tablink-underline {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tablink-container:hover .tablink-underline,
+.tablink-container.tablink-active .tablink-underline {
+    border-bottom: 2px solid #fff;
+}
+
+.seccionn {
+    width: 80%;
+    height: 5px;
+    background-color: #A12043;
+    display: none;
+    /* Inicialmente oculto */
+    position: absolute;
+    top: calc(100% + 5px);
+    /* Posiciona debajo del texto del enlace */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tablink-container:hover .seccionn,
+.tablink-container.tablink-active .seccionn {
+    display: block;
+}
+
+.content {
+    display: none;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    border: none;
+    padding: 15px;
+    text-align: left;
+    background-color: #f8f9fa;
+    /* Color de fondo predeterminado */
+    color: #495057;
+    /* Color del texto predeterminado */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transición suave */
+}
+
+.table th {
+    /* background: linear-gradient(to bottom, #0E773F, #008735,#035223); */
+    background-color:#a57f2c; /* Color de la tabla -SHOWI */
+    color: #fff;
+    /* Color del texto del encabezado */
+}
+
+
+.imagen-flotante {
+    position: fixed;
+    bottom: 10px;
+    /* Ajusta la posición vertical según tus necesidades */
+    right: 0.2px;
+    transform: translateX(-50%);
+    /* Centra la imagen correctamente */
+
+}
+
+a {
+    text-decoration: none;
+    /* Quitar subrayado */
+    color: #000000;
+    /* Cambiar color (puedes poner el color que desees en formato hexadecimal, RGB, nombre, etc.) */
+}
+
+
+
+
+/* CARDS PARA CONVOCATORIA */
+
+.seccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 500px;
+    /* Ajusta el ancho máximo de la imagen */
+    height: 200px;
+    object-fit: cover;
+}
+
+.name_p {
+    background-color: #952d3d;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.cerrar {
+    display: block;
+    background: #952d3d;
+    width: 100px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+    line-height: 25px;
+    color: #ffffff;
+    border-radius: 5%;
+}
+
+.modal-content-pro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#pdfContainer {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal-content-pro {
+        width: 90%;
+        /* Ajustado para dispositivos muy pequeños */
+    }
+}
+
+.parti:hover {
+    color: #a57f2c;
+    font-weight: bold;
+    transform: scale(1.2);
+    /* Ajusta el valor según tu preferencia */
+
+}
+.btn-success {
+    background-color: #a57f2c; /* Mantener el marrón claro en el fondo */
+    border-color: #8b5e3c;     /* Cambiar el borde a un marrón más oscuro */
+}
+
+/*btn flotante*/
+
+.container-boton {
+
+    border: .5px solid #fff;
+    position: fixed;
+    z-index: 80;
+    border-radius: 50%;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton {
+    width: 120px;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+/*Estilos para hacer el fondo del submenu  */
+.dropdown-menu {
+    background: linear-gradient(to bottom,#611232, #a04e62);
+    border: none;
+}
+
+
+.dropdown-item {
+    color: rgba(255, 255, 255, 0.8);
+    /* Puedes ajustar el valor alpha según tus preferencias */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Puedes ajustar el valor alpha según tus preferencias */
+}
+
+.contact-map {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vw;
+    /* Utilizamos unidades relativas para hacerlo más flexible */
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+    display: grid;
+    align-items: center;
+}
+
+/* Utilizamos consultas de medios para ajustar los estilos en diferentes tamaños de pantalla */
+@media only screen and (min-width: 600px) {
+    .contact-map {
+        padding: 20px;
+    }
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 60s linear infinite;
+    -webkit-animation: scroll 60s linear infinite;
+    width: calc(200px * 20);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px * 18));
+        transform: translateX(calc(-200px * 18));
+    }
+}
+
+/**************************************** Style.css ****************************************/
+* {
+    font-family: 'poppins';
+
+}
+
+.s {
+    pointer-events: none;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+
+    }
+}
+
+.no-download {
+    pointer-events: none;
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+}
+
+
+.navbar {
+    height: 95px;
+}
+
+
+.sombra {
+    filter: drop-shadow(12px 12px 5px rgba(0, 0, 0, 0.397));
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+@media screen and (max-width: 567px) {
+    .banner {
+        text-align: center;
+    }
+}
+
+/*carrusel*/
+.midon img {
+    height: 76vh;
+}
+
+/*IMAGENES CARRUSEL*/
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .card {
+      border:none;
+      text-align: center;
+      border-top-left-radius: 10em;
+      border-top-right-radius: 10em;
+      box-shadow: 0px 0px 10px teal;
+    }
+    .card img {
+      border-top-left-radius: 10em;
+      border-top-right-radius: 10em;
+    }
+    .btn_p {
+      width: 100%;
+      padding: 0.75em 0.5em;
+      border-radius: 0;
+      background-color: teal;
+      border-color: teal;
+    } */
+.btn-outline-personal {
+    border-color: #beffdd;
+}
+
+.card {
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.swal-button {
+    background-color: #611232 !important;
+    color: #FFFFFF !important;
+    /* Puedes agregar más estilos según tus preferencias */
+}
+
+/* carrusel ponnetes */
+/* Animación de desplazamiento continuo */
+@keyframes scrollPonentes {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel-ponentes {
+    display: flex;
+    gap: 1rem;
+    /* Espacio entre elementos */
+    animation: scrollPonentes 10s linear infinite;
+    /* Duración de la animación */
+    width: 200%;
+    /* Asegura que los elementos tengan espacio para desplazarse */
+    overflow: hidden;
+    /* Oculta los elementos que desbordan el contenedor */
+}
+
+.carousel-item-ponente {
+    flex: 1 0 100%;
+    /* Ocupa todo el espacio disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Alinea los elementos verticalmente */
+}
+
+.nombre-ponente {
+    margin-top: 10px;
+    /* Espacio superior para el nombre */
+}
+
+.imagen-ponente {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Forma la imagen como un círculo */
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    /* Centra el carrusel */
+    max-width: 800px;
+    /* Ancho máximo del carrusel */
+}
+
+@media (max-width: 767px) {
+
+    /* Oculta la imagen en dispositivos con un ancho de pantalla menor a 767px */
+    .hide-on-mobile {
+        display: none !important;
+        /* Agrega !important para asegurarte de que el estilo se aplique */
+    }
+}

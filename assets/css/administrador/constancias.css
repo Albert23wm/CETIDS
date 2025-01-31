@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para los botones */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambiar cursor a mano al pasar sobre el botón */
+    margin: 5px;
+    /* Margen exterior */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el icono dentro del botón */
+.btn i {
+    font-size: 32px;
+    /* Tamaño de icono */
+    margin-right: 5px;
+    /* Espacio entre el icono y el texto */
+}
+
+/* Estilos adicionales para botones específicos */
+.btn-success {
+    background-color: #28a745;
+    /* Color verde */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    /* Color rojo */
+}

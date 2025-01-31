@@ -1,0 +1,57 @@
+.swal-button {
+    background-color: #0E773F !important;
+    color: #FFFFFF !important;
+    /* Puedes agregar más estilos según tus preferencias */
+}
+
+body {
+    -webkit-user-select: none;
+    /* Safari/Chrome */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* General */
+}
+
+.s {
+    pointer-events: none;
+}
+
+@media (max-width: 767px) {
+
+    /* Oculta la imagen en dispositivos con un ancho de pantalla menor a 767px */
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .container {
+        /* Quita el ancho fijo y deja que Bootstrap maneje la responsividad */
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Ajusta el estilo del botón de inicio de sesión */
+    .btn-iniciar-sesion {
+        background: linear-gradient(to bottom, #5CE896, #45AB46, #40CB41);
+    }
+
+    .header-btns {
+        margin-top: 10px;
+        /* Mejora el espacio en dispositivos pequeños */
+    }
+
+    /* Ajusta el tamaño de los botones en dispositivos móviles */
+    .btn-custom {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+        /* Ajusta el espacio entre los botones */
+    }
+}
