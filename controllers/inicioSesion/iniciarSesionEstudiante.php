@@ -37,7 +37,7 @@ if ($resultado->num_rows > 0) {
     $fila = $resultado->fetch_assoc();
     $stmt->close();
 
-    if ($fila['clave'] == $clave && $fila['contrasena'] == $contrasena) {
+    if ($fila['clave'] == $clave && password_verify($contrasena, $fila['contrasena'])) {
         $_SESSION['idAdmin'] = $fila['id'];
         header('Location: ../../administrador/talleres.php');
         exit();
@@ -47,6 +47,7 @@ if ($resultado->num_rows > 0) {
         exit();
     }
 }
+
 $stmt->close();
 
 // Verificar si es estudiante

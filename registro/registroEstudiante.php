@@ -63,6 +63,8 @@
             // Enviar el código por correo electrónico
             $mail = new PHPMailer(true);
             // Insertar el nuevo estudiante en la base de datos
+            $contrasenaHash = password_hash($contrasena, PASSWORD_DEFAULT);
+
             $insert_query = "INSERT INTO estudiantes (matricula, nombre, apellido, institucion, grado, correo, contrasena) VALUES ('$matricula', '$nombre_estudiante', '$apellido', '$unidad_academica', '$grado','$correo_electronico', '$contrasena')";
 
             if ($conexion->query($insert_query) === TRUE) {
